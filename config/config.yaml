@@ -1,0 +1,14 @@
+data:
+  raw_path: "data/house_prices.csv"
+  test_size: 0.2
+  random_state: 42
+
+model:
+  n_estimators: 100
+  model_save_path: "models/model.pkl"
+
+features:
+  numeric: ['Area', 'Bedrooms', 'Bathrooms', 'Age']
+  categorical: ['Location', 'Property_Type']
+  target: 'Price'
+  drop_columns: ['Property_ID', 'Price']
