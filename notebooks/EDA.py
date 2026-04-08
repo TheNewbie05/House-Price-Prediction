@@ -8,12 +8,11 @@ sns.set_theme(style="whitegrid")
 
 # Dynamic Path Setup
 # This finds the data folder regardless of where you run the notebook from
-BASE_DIR = os.path.dirname(os.getcwd())
-DATA_PATH = os.path.join(BASE_DIR, 'data', 'house_prices.csv')
+#BASE_DIR = os.path.dirname(os.getcwd())
+#DATA_PATH = os.path.join(BASE_DIR, 'data', 'house_prices.csv')
 
 # Load Dataset
-print(f"Loading data from: {DATA_PATH}")
-df = pd.read_csv(DATA_PATH)
+df = pd.read_csv('data\house_prices.csv')
 
 # --- 1. Basic Inspection ---
 print("--- Dataset Overview ---")
